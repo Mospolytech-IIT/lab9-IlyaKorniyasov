@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <form action="/posts/{{ post.post_id }}" method="post">
+        <label>Content:</label>
+        <textarea name="content" required>{{ post.content }}</textarea><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
