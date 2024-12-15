@@ -4,8 +4,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Text, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
 from sqlalchemy import inspect
 
-DATABASE_URL = """mssql+pyodbc://@DESKTOP-EK53461\\SQLEXPRESS/korniyasov?
-driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes"""
+DATABASE_URL = "mssql+pyodbc://@DESKTOP-EK53461\\SQLEXPRESS/korniyasov?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes""" # pylint: disable=all
 #DATABASE_URL = """mssql+pyodbc://@127.0.0.1\\SQLEXPR
 ##ESS/korniyasov?driver=ODBC+Driver+17+for+SQL+Server"""
 
